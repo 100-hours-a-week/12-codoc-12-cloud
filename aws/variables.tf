@@ -20,10 +20,10 @@ variable "root_volume_gb" {
 
 variable "key_name" {
   type        = string
-  description = "EC2 Key Pair name (NOT the .pem filename)"
+  description = "codoc-key"
 }
 
 variable "ssh_cidr" {
   type    = string
-  default = "0.0.0.0/0" # 지금은 전체 허용. 나중에 내 IP로 바꾸자.
+  default = "0.0.0.0/0" # 지금은 전체 허용
 }
