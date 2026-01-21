@@ -78,6 +78,7 @@ Terraform을 통해 다음 리소스들을 코드로 정의하였다.
 │   └── .terraform.lock.hcl
 ├── .gitignore
 └── README.md
+```
 
 	•	.tf 파일: 인프라 구조(설계도)  
 	•	.tfvars 파일: 실제 값(로컬에서만 사용, Git 제외)  
@@ -88,7 +89,7 @@ Terraform을 통해 다음 리소스들을 코드로 정의하였다.
 ## 5. Terraform 실행 흐름
 
 Terraform은 로컬 환경에 설정된 AWS 자격증명을 사용하여 실행한다.
-```
+```text
 terraform init
 terraform fmt
 terraform validate
