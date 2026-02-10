@@ -7,6 +7,13 @@ terraform {
       version = "~> 5.0"
     }
   }
+
+  backend "s3" {
+    bucket = "codoc-terraform-state"
+    key    = "codoc/dev/terraform.tfstate"
+    region = "ap-northeast-2"
+    encrypt = true
+  }
 }
 
 provider "aws" {
